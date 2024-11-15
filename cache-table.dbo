@@ -1,0 +1,10 @@
+CREATE TABLE [dbo].[CacheTable]
+(
+    [Id] NVARCHAR (449) NOT NULL PRIMARY KEY,
+    [Value] VARBINARY (MAX) NOT NULL,
+    [ExpiresAtTime] DATETIMEOFFSET NOT NULL,
+    [SlidingExpirationInSeconds] BIGINT NULL,
+    [AbsoluteExpiration] DATETIMEOFFSET NULL
+);
+
+select * from [dbo].[CacheTable]
