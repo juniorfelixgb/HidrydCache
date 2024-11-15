@@ -1,0 +1,6 @@
+@HidrydCache_HostAddress = http://localhost:5150
+
+GET {{HidrydCache_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
